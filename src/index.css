@@ -1,18 +1,10 @@
-/* body, html {
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Roboto", sans-serif;
-} */
-
-
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 30px;
 }
 

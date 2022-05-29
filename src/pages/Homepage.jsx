@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import SpeechRecognition, {
-  useSpeechRecognition,
+  useSpeechRecognition
 } from "react-speech-recognition";
 import benefit1 from "../assets/img/benefit1.jpg";
 import benefit2 from "../assets/img/benefit2.jpg";
 import benefit3 from "../assets/img/benefit3.jpg";
 import WFHImage from "../assets/img/WFH.png";
-import Message from "../components/Message/Message";
-import WaveMessage from "../components/WaveMessage/WaveMessage";
+import Message from "../components/Message";
+import WaveMessage from "../components/WaveMessage";
 import useGetAnswer from "../hooks/use-getAnswer";
-import About from "./About";
+import Intro from "./Intro";
 import "./homepage.css";
 
 const benefits = [
@@ -109,7 +109,7 @@ const Homepage = () => {
 
   const {
     isLoading,
-    error,
+    // error,
     sendRequest,
     rateOfConfusedAnwser,
     numberAnwer,
@@ -139,7 +139,7 @@ const Homepage = () => {
 
   useEffect(() => {
     console.log(isConfuse);
-    if (isConfuse == true) {
+    if (isConfuse) {
       setConversation((pre) => [
         ...pre,
         {
@@ -259,7 +259,7 @@ const Homepage = () => {
 
   return (
     <>
-      <About />
+      <Intro />
       <section className="section" id="section-chatbox">
         <p className="section-noty">
           {!browserSupportsSpeechRecognition &&
@@ -316,10 +316,10 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="section" id="section-intro">
-        <div className="container">
+      <section className="section" id="section-about">
+        <div className="container d-flex">
           <div className="intro__description">
-            <h3 className="section-title">About product</h3>
+            <h3 className="section-title mt-5">About product</h3>
             <p>
               We detect one problem when using Sakai: students meet problems and
               do not know how to use Sakai during the study process. The

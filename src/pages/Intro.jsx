@@ -1,11 +1,10 @@
 import React from "react";
-
-import "./about.css";
 import ChatbotBackground from "../assets/img/chatbot-background2.jpg";
+import "./intro.css";
 
 const About = () => {
   return (
-    <section className="section" id="section-about">
+    <section className="section" id="section-intro">
       <div className="container">
         <div className="row">
           <div className="col col-6">

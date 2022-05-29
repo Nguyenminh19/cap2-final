@@ -1,5 +1,5 @@
 import React from "react";
-import "./WaveMessage.css";
+import "./wave-message.css";
 
 const WaveMessage = () => {
   return (

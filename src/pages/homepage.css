@@ -1,133 +1,132 @@
 .section {
-    display: flex;
-    flex-direction: column;
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
 .section-noty {
-    font-size: 20px;
-    color: red;
+  font-size: 20px;
+  color: red;
 }
 
 .category-button {
-    width: 70%;
-    margin: 12px;
+  width: 70%;
+  margin: 12px;
 }
 
 .button + .button {
-    margin-right: 12px;
-    margin-top: 12px;
+  margin-right: 12px;
+  margin-top: 12px;
 }
-  
+
 .chatbox {
-    margin: 5rem auto;
-    height: 70vh;
-    max-width:900px;
-    width:70%;
-    border: 1px solid #ccc;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 5px;
+  margin: 5rem auto;
+  height: 70vh;
+  max-width: 900px;
+  width: 70%;
+  border: 1px solid #ccc;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .chatbox-content {
-    height: 100%;
-    overflow-y: auto;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .chatbox-control {
-    margin-top: 10%;
-    height: 10%;
-    position: relative;
+  margin-top: 10%;
+  height: 10%;
+  position: relative;
 }
 
 .chatbox-action {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .chatbox-action button {
-    margin: 0 5px;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 12px;
-    font-size: 14px;
-    transition: all ease 0.3s;
+  margin: 0 5px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 14px;
+  transition: all ease 0.3s;
 }
 
-
 .chatbox-action-micro {
-    border-radius: 50%;
-    animation: test 0.5s infinite both;
-    animation-direction: alternate;
+  border-radius: 50%;
+  animation: test 0.5s infinite both;
+  animation-direction: alternate;
+}
+
+@keyframes test {
+  from {
+    background-color: inherit;
   }
-  
-  @keyframes test {
-    from {
-      background-color: inherit;
-    }
-    to {
-      background-color: rgb(199, 199, 202);
-    }
+  to {
+    background-color: rgb(199, 199, 202);
   }
+}
 
 .chatbox-action button:hover {
-    color: #df6c21;
+  color: #df6c21;
 }
 
 #section-intro .container {
-    display: flex;
+  display: flex;
 }
 
 .intro__description {
-    width: 60%;
-    padding-right: 30px;
+  width: 60%;
+  padding-right: 30px;
 }
 
-.intro__img{
-    width: 40%;
-    position: relative;
+.intro__img {
+  width: 40%;
+  position: relative;
 }
 
 .intro__img img {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .input-text {
-    box-shadow : rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
-    padding: 12px;
-    border-radius: 4px;
-    width: 100%;
-    display: block;
-    outline: none;
-    border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
 }
 
 .benefit-list {
-    display: grid;
-    margin-top:40px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
 }
 
 .benefit-title {
-    font-weight: 700;
-    color: #33405e;
-    margin: 20px 0;
-    font-size: 16px;
+  font-weight: 700;
+  color: #33405e;
+  margin: 20px 0;
+  font-size: 16px;
 }
 
 .benefit-description {
-    font-weight: 300;
-    color: #33405e;
+  font-weight: 300;
+  color: #33405e;
 }
-
